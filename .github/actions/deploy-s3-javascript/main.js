@@ -7,7 +7,7 @@ function run() {
     // 1) Get Some Input values
     const bucket = core.getInput('bucket', { required: true });
     const bucketRegion = core.getInput('bucket-region', { required: true });
-    const distRegion = core.getInput('bucket-region', { required: true });
+    const distFolder = core.getInput('dist-folder', { required: true });
    
     // 2) Upload Files
     const s3Uri = `s3://${bucket}`
